@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+
+        >
+        <ImageView
+            android:id="@+id/contactPic"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:id="@+id/contactsView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@+id/contactPic"
+            android:fontFamily="sans-serif-thin"
+            android:text="demo"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/numberView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/contactPic"
+            android:layout_marginStart="17dp"
+            android:layout_toEndOf="@+id/contactsView"
+            android:fontFamily="sans-serif-thin"
+            android:text="0544735106"
+            android:textColor="#252222"
+            android:textSize="12sp" />
+
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="14dp" />
+
+
+
+    </RelativeLayout>
+</RelativeLayout>

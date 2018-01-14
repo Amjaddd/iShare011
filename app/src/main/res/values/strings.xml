@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">iShare</string>
+    <string name="tab_text_1">My Profile</string>
+    <string name="tab_text_2">Route</string>
+    <string name="tab_text_3">Main</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!-- Facebook Codes to make facebook login -->
+    <string name="facebook_app_id">1541145485955161</string>
+    <string name="fb_login_protocol_scheme">fb1541145485955161</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

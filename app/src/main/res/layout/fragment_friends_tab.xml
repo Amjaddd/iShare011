@@ -1,0 +1,167 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/first_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.husam_pc.myishare.FriendsFragmentTab"
+
+
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/inviteFriendsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <RelativeLayout
+                android:layout_width="195dp"
+                android:layout_height="50dp"
+                android:id="@+id/add_contact"
+                android:onClick="getActivity"
+                >
+
+                <ImageView
+                    android:id="@+id/imgAddRoute"
+                    android:layout_width="25dp"
+                    android:layout_height="27dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="17dp"
+                    android:background="@drawable/new_message" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/imgAddRoute"
+                    android:layout_marginStart="19dp"
+                    android:layout_toEndOf="@+id/imgAddRoute"
+                    android:fontFamily="sans-serif-light"
+                    android:text="New message"
+                    android:textColor="#000504"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+
+
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="195dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:id="@+id/new_group">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="17dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="New Group"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:id="@+id/textView2" />
+
+                <ImageView
+
+                    android:layout_width="25dp"
+                    android:layout_height="27dp"
+                    android:layout_alignTop="@+id/textView2"
+                    android:layout_marginEnd="17dp"
+                    android:layout_toStartOf="@+id/textView2"
+                    android:background="@drawable/add_group" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="320dp"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/inviteFriendsLayout"
+
+
+            />
+
+        <RelativeLayout
+            android:id="@+id/groupChatLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/divider">
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/friendsLabel"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/divider"
+            android:background="#478cff">
+
+            <ImageView
+                android:id="@+id/startIcon"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:background="@drawable/group" />
+
+            <TextView
+                android:id="@+id/ContactsCounter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="17dp"
+                android:fontFamily="sans-serif-light"
+                android:text="0"
+                android:textColor="#060000"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/startIcon"
+                android:fontFamily="sans-serif-light"
+                android:text="Chats"
+                android:textColor="#ffffff"
+                android:textSize="24dp"
+                android:textStyle="italic" />
+
+
+        </RelativeLayout>
+        <!--
+                <fragment
+                    android:id="@+id/friendsFragment"
+                    class="com.example.husam_pc.myishare.FriendsFragmentTab"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/friendsLabel" />
+        -->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/friendsRV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/friendsLabel">
+
+
+        </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+
+</FrameLayout>

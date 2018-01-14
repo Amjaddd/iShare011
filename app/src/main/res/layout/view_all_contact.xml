@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:id="@+id/contactbar">
+
+        <ImageView
+            android:id="@+id/contactPic"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:id="@+id/contactsView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/numberView"
+        android:layout_alignStart="@+id/divider"
+        android:layout_marginStart="24dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="demo"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/numberView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/contactPic"
+        android:layout_alignStart="@+id/contactsView"
+        android:layout_marginStart="37dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="0544735106"
+        android:textColor="#252222"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+        <View
+            android:id="@+id/divider"
+            android:layout_width="320dp"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:background="#494949" />
+
+
+</RelativeLayout>

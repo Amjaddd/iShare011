@@ -1,0 +1,101 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.husam_pc.myishare.FragmentProfile"
+    android:background="#e6e5e5">
+
+
+    <RelativeLayout
+        android:id="@+id/nameImage"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:layout_margin="20dp"
+        android:background="#ffffff">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/imageProfile"
+
+            />
+
+        <EditText
+            android:id="@+id/edUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView9"
+            android:layout_marginStart="53dp"
+            android:layout_toEndOf="@+id/editImage"
+            android:hint="User Name"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/editImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/imageProfile"
+            android:layout_below="@+id/imageProfile"
+            android:layout_marginEnd="34dp"
+            android:text="Edit"
+            android:textAlignment="viewStart"
+            android:textColor="#0022ff" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="13dp"
+            android:layout_toEndOf="@+id/editImage"
+            android:text="Enter your name and add an optional profile picture" />
+
+        <EditText
+            android:id="@+id/edPoneNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView11"
+            android:layout_marginStart="28dp"
+            android:ems="10"
+            android:inputType="phone" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/edPoneNum"
+            android:layout_centerVertical="true"
+            android:text="Phone Number" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/edPoneNum"
+            android:layout_below="@+id/edPoneNum"
+            android:layout_marginTop="27dp"
+            android:text="About" />
+
+        <EditText
+            android:id="@+id/edAbout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView12"
+            android:layout_below="@+id/textView12"
+            android:layout_marginTop="13dp"
+            android:ems="10"
+            android:hint="about"
+             />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </RelativeLayout>
+
+
+</FrameLayout>

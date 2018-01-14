@@ -1,0 +1,48 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.husam_pc.myishare.RouteFragmentTab">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layoutAddRoute"
+        android:layout_marginTop="10dp"
+        >
+        <ImageView
+            android:id="@+id/imgAddRoute"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="17dp"
+            android:src="@mipmap/plus" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imgAddRoute"
+            android:layout_marginStart="19dp"
+            android:layout_toEndOf="@+id/imgAddRoute"
+            android:fontFamily="sans-serif-light"
+            android:text="Add Route"
+            android:textColor="#000504"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:id="@+id/add_contact" />
+        <View
+            android:layout_width="385dp"
+            android:layout_height="0.9dp"
+            android:background="#7a7b81"
+            android:layout_below="@+id/add_contact"/>
+    </RelativeLayout>
+    <fragment
+        class="com.example.husam_pc.myishare.FragmentRoute"
+        android:id="@+id/routesFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:layout_below="@+id/layoutAddRoute"
+        />
+
+</FrameLayout>
