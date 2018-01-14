@@ -7,7 +7,7 @@
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.SEND_SMS" />
 <!--
-WWWaaa3
+WWWaaa3 Waaa3
 -->
     <application
         android:allowBackup="true"
